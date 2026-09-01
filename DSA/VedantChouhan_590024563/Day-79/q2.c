@@ -1,3 +1,4 @@
+//q2.
 #include <stdio.h>
 
 int findSingle(int nums[], int n) {
