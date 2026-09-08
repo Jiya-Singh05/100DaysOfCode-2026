@@ -43,3 +43,19 @@ int countValidPaths(TreeNode* root, unsigned mask) {
 
     return countValidPaths(root->left, mask) + countValidPaths(root->right, mask);
 }
+
+int main(void) {
+    int t1[] = {2, 3, 1, 3, 1, -1, 1};
+    TreeNode* r1 = build(t1, 7, 0);
+    printf("%d\n", countValidPaths(r1, 0)); // 2
+
+    int t2[] = {1, 1, 1};
+    TreeNode* r2 = build(t2, 3, 0);
+    printf("%d\n", countValidPaths(r2, 0)); // 2
+
+    int t3[] = {5};
+    TreeNode* r3 = build(t3, 1, 0);
+    printf("%d\n", countValidPaths(r3, 0)); // 1
+
+    return 0;
+}
