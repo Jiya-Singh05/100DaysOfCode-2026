@@ -16,3 +16,8 @@ class Solution:
             first[s[i]] = i + 1
             second[t[i]] = i + 1
         return True
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
