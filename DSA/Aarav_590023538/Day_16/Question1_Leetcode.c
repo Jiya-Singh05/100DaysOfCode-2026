@@ -36,3 +36,8 @@ struct ListNode* swapPairs(struct ListNode* head) {
     // Return the modified linked list
     return head;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
