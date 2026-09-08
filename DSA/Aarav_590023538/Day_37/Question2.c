@@ -54,3 +54,11 @@ int printerQueue(int *priorities, int n, int location) {
     free(queue);
     return -1; // unreachable if location is valid
 }
+
+int main() {
+    int priorities[] = {2, 1, 3, 2};
+    int n = sizeof(priorities) / sizeof(priorities[0]);
+    int location = 2;
+    printf("Minute printed: %d\n", printerQueue(priorities, n, location));
+    return 0;
+}
