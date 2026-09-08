@@ -11,3 +11,8 @@ def maxSumPairMin(nums):
 print(maxSumPairMin([1, 4, 3, 2]))       # 4
 print(maxSumPairMin([6, 2, 6, 5, 1, 2])) # 9
 print(maxSumPairMin([1, 2, 3, 4]))       # 4
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
