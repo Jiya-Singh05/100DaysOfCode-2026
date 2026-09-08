@@ -29,3 +29,8 @@ struct ListNode* removeElements(struct ListNode* head, int val) {
     // Return the updated head
     return start.next;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
