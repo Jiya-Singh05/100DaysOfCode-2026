@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -30,4 +26,17 @@ void printVec(const vector<int>& v) {
         cout << v[i] << (i + 1 == v.size() ? "" : ",");
     }
     cout << "]\n";
+}
+
+int main() {
+    vector<int> n1 = {2,1,3,3};
+    printVec(maxSubsequence(n1, 2)); // [3,3]
+
+    vector<int> n2 = {-1,-2,3,4};
+    printVec(maxSubsequence(n2, 3)); // [-1,3,4]
+
+    vector<int> n3 = {3,4,3,3};
+    printVec(maxSubsequence(n3, 2)); // [3,4]
+
+    return 0;
 }
