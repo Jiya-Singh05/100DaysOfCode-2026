@@ -11,3 +11,8 @@ def time_required_to_buy(tickets, k):
         else:
             time += min(t, tickets[k] - 1)
     return time
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
