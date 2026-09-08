@@ -44,3 +44,8 @@ int compress(char* chars, int charsSize) {
     // Return the length of the compressed array
     return write;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
