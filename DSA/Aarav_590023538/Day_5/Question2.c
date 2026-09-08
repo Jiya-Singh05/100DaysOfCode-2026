@@ -29,3 +29,14 @@ bool areEqual(int a[], int b[], int n) {
     }
     return true;
 }
+
+int main() {
+    int a[] = {1, 2, 5, 4, 0};
+    int b[] = {2, 4, 5, 0, 1};
+    int n = sizeof(a) / sizeof(a[0]);
+    if (areEqual(a, b, n))
+        printf("true");
+    else
+        printf("false");
+    return 0;
+}
