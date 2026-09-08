@@ -30,3 +30,8 @@ bool isHappy(int n) {
     // If the cycle ends at 1, the number is happy
     return slow == 1;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
