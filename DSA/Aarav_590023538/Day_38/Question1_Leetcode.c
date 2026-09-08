@@ -25,3 +25,8 @@ class Solution {
         return count[0] + count[1];
     }
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
