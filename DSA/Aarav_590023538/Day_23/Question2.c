@@ -69,3 +69,21 @@ bool backspaceCompare(char s[], char t[])
 
     return true;
 }
+
+int main()
+{
+    char s[201], t[201];
+
+    printf("Enter first string: ");
+    scanf("%s", s);
+
+    printf("Enter second string: ");
+    scanf("%s", t);
+
+    if (backspaceCompare(s, t))
+        printf("true\n");
+    else
+        printf("false\n");
+
+    return 0;
+}
