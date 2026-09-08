@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// LeetCode 543: Diameter of Binary Tree
 struct TreeNode { int val; struct TreeNode *left; struct TreeNode *right; };
-int diameterOfBinaryTree(struct TreeNode* root);
+int max(int a, int b) { return a > b ? a : b; }
+int depth(struct TreeNode* root, int* max_d) {
+    if (!root) return 0;
+    int l = depth(root->left, max_d);
+    int r = depth(root->right, max_d);
+    if (l + r > *max_d) *max_d = l + r;
+    return 1 + max(l, r);
+}
