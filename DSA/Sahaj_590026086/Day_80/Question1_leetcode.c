@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+
 int hammingWeight(uint32_t n) {
     int count = 0;
     while (n) {
@@ -8,4 +9,9 @@ int hammingWeight(uint32_t n) {
         count++;
     }
     return count;
+}
+
+int main() {
+    printf("%d\n", hammingWeight(11));
+    return 0;
 }
