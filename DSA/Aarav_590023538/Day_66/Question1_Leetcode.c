@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -39,4 +35,18 @@ TreeNode* insertIntoBST(TreeNode* root, int val) {
     if (val < root->val) root->left = insertIntoBST(root->left, val);
     else root->right = insertIntoBST(root->right, val);
     return root;
+}
+
+int main() {
+    vector<int> v1 = {4,2,7,1,3};
+    TreeNode* r1 = buildTree(v1);
+    r1 = insertIntoBST(r1, 5);
+    // r1 now serializes to [4,2,7,1,3,5]
+
+    vector<int> v2 = {40,20,60,10,30,50,70};
+    TreeNode* r2 = buildTree(v2);
+    r2 = insertIntoBST(r2, 25);
+    // r2 now serializes to [40,20,60,10,30,50,70,null,null,25]
+
+    return 0;
 }
