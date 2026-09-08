@@ -2,5 +2,15 @@
 #include <bits/stdc++.h>
 #include <stdlib.h>
 
-// The Missing Power of Two
-int findSingleNumber(const vector<int>& nums);
+pp
+#include <bits/stdc++.h>
+using namespace std;
+
+int findSingleNumber(const vector<int>& nums) {
+    int ans = 0;
+
+    for (int x : nums)
+        ans ^= x;
+
+    return ans;
+}
