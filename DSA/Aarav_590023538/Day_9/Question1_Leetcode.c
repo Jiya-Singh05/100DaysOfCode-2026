@@ -24,3 +24,8 @@ int lengthOfLastWord(char* s) {
 
     return length;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
