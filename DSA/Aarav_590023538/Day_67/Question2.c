@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -31,4 +27,14 @@ vector<int> balanceSpectrum(vector<int>& arr) {
     cntM1 = cnt0 = cntP1 = 0;
     build(arr, 0, (int)arr.size() - 1);
     return {cntM1, cnt0, cntP1};
+}
+
+int main() {
+    vector<int> arr1 = {1, 2, 3, 4, 5, 6, 7};
+    auto r1 = balanceSpectrum(arr1); // 0 7 0
+
+    vector<int> arr2 = {42};
+    auto r2 = balanceSpectrum(arr2); // 0 1 0
+
+    return 0;
 }
