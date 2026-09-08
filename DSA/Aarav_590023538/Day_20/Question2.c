@@ -59,3 +59,12 @@ void printList(struct Node *head) {
     }
     printf("\n");
 }
+
+int main() {
+    struct Node *head = NULL;
+    // Take input and create the linked list as per requirement
+    head = segregateEvenOdd(head);
+    // Print the rearranged linked list
+    printList(head);
+    return 0;
+}
