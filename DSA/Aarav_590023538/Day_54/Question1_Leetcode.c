@@ -1,5 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-// Count Elements With Maximum Frequency (LeetCode #3005)
-int maxFrequencyElements(int *nums, int n);
+int maxFrequencyElements(int *nums, int n) {
+    int count[101] = {0}; // values are 1..100
+
+    for (int i = 0; i < n; i++) {
+        count[nums[i]]++;
+    }
+
+    int maxFreq = 0;
+    for (int v = 1; v <= 100; v++) {
+        if (count[v] > maxFreq) maxFreq = count[v];
+    }
+
+    int total = 0;
+    for (int v = 1; v <= 100; v++) {
+        if (count[v] == maxFreq) total += count[v];
+    }
+
+    return total;
+}
