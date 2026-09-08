@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// The Unique Bit Pattern
-int findUnique(int* arr, int n);
+int findUnique(int* arr, int n) {
+    int res = 0;
+    for (int i = 0; i < n; i++) res ^= arr[i];
+    return res;
+}
