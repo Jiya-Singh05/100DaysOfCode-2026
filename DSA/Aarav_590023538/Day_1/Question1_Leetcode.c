@@ -15,3 +15,8 @@ int missingNumber(int nums[], int numsSize) {
     // Missing number = Total - Actual Sum
     return Total - actualSum;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
