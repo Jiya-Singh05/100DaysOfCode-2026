@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -44,4 +40,16 @@ bool evaluateTree(TreeNode* root) {
     bool right = evaluateTree(root->right);
 
     return (root->val == 2) ? (left || right) : (left && right); // 2=OR, 3=AND
+}
+
+int main() {
+    vector<int> v1 = {2, 1, 3, NIL, NIL, 0, 1};
+    TreeNode* r1 = buildTree(v1);
+    cout << boolalpha << evaluateTree(r1) << endl; // true
+
+    vector<int> v2 = {0};
+    TreeNode* r2 = buildTree(v2);
+    cout << boolalpha << evaluateTree(r2) << endl; // false
+
+    return 0;
 }
