@@ -21,3 +21,8 @@ def lastStoneStanding(rocks):
 print(lastStoneStanding([2, 7, 4, 1, 8, 1]))  # 1
 print(lastStoneStanding([10, 4, 2, 10]))       # 2
 print(lastStoneStanding([1, 1]))               # 0
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
