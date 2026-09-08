@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// LeetCode 2099: Find Subsequence of Length K With the Largest Sum
-int* maxSubsequence(int* nums, int numsSize, int k, int* returnSize);
+typedef struct { int val; int index; } Element;
+int compareVal(const void* a, const void* b) { return ((Element*)b)->val - ((Element*)a)->val; }
+int compareIndex(const void* a, const void* b) { return ((Element*)a)->index - ((Element*)b)->index; }
