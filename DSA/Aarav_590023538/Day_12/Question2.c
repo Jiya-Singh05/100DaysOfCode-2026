@@ -26,3 +26,8 @@ for i in range(len(s)):
             break
 # Print the length of the smallest valid substring
 print(answer)
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
