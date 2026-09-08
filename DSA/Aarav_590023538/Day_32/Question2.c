@@ -58,3 +58,20 @@ void display(struct Stack *s) {
     }
     printf("\n");
 }
+
+int main() {
+    struct Stack st, copiedStack;
+    init(&st);
+    // Push elements into the original stack
+    push(&st, 1);
+    push(&st, 2);
+    push(&st, 3);
+    push(&st, 4);
+    // Copy the stack
+    copyStack(&st, &copiedStack);
+    printf("Original Stack: ");
+    display(&st);
+    printf("Copied Stack: ");
+    display(&copiedStack);
+    return 0;
+}
