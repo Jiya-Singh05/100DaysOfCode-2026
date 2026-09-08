@@ -26,3 +26,8 @@ char* removeDuplicates(char* s) {
     // Return the final string
     return stack;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
