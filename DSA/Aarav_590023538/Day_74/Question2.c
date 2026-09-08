@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -30,4 +26,32 @@ void dfs(int u, int parent) {
         covered[u] = true;
         for (int i = 0; i < k; i++) covered[availableChildren[i]] = true;
     }
+}
+
+int main() {
+    int C;
+    cin >> C;
+    while (C--) {
+        int n, t, m;
+        cin >> n >> t >> m;
+
+        N = n; T = t;
+        adj.assign(n + 1, {});
+        covered.assign(n + 1, false);
+        visited.assign(n + 1, false);
+
+        for (int i = 0; i < m; i++) {
+            int a, b;
+            cin >> a >> b;
+            adj[a].push_back(b);
+            adj[b].push_back(a);
+        }
+
+        for (int i = 1; i <= n; i++) if (!visited[i]) dfs(i, 0);
+
+        int total = 0;
+        for (int i = 1; i <= n; i++) if (covered[i]) total++;
+        cout << total << "\n";
+    }
+    return 0;
 }
