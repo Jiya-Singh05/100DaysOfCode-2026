@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -41,4 +37,11 @@ string officePrinterWars(string jobs) {
     }
 
     return countS > 0 ? "Sales" : "Marketing";
+}
+
+int main(void) {
+    cout << officePrinterWars("SM") << "\n";   // Sales
+    cout << officePrinterWars("SMSM") << "\n"; // Sales
+    cout << officePrinterWars("MSMS") << "\n"; // Marketing
+    return 0;
 }
