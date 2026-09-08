@@ -31,3 +31,8 @@ int findContentChildren(int* g, int gSize, int* s, int sSize)
     // Number of satisfied children
     return child;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
