@@ -2,5 +2,18 @@
 #include <bits/stdc++.h>
 #include <stdlib.h>
 
-// Single Number II (LeetCode #137)
-int singleNumber(vector<int>& nums);
+pp
+#include <bits/stdc++.h>
+using namespace std;
+
+int singleNumber(vector<int>& nums) {
+    int ones = 0;
+    int twos = 0;
+
+    for (int x : nums) {
+        ones = (ones ^ x) & ~twos;
+        twos = (twos ^ x) & ~ones;
+    }
+
+    return ones;
+}
