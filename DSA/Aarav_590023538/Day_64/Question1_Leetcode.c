@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -44,4 +40,16 @@ int rangeSumBST(TreeNode* root, int low, int high) {
     if (root->val > high) return rangeSumBST(root->left, low, high);  // whole right subtree too big
 
     return root->val + rangeSumBST(root->left, low, high) + rangeSumBST(root->right, low, high);
+}
+
+int main() {
+    vector<int> v1 = {10, 5, 15, 3, 7, NIL, 18};
+    TreeNode* r1 = buildTree(v1);
+    cout << rangeSumBST(r1, 7, 15) << endl; // 32
+
+    vector<int> v2 = {10, 5, 15, 3, 7, 13, 18, 1, NIL, 6};
+    TreeNode* r2 = buildTree(v2);
+    cout << rangeSumBST(r2, 6, 10) << endl; // 23
+
+    return 0;
 }
