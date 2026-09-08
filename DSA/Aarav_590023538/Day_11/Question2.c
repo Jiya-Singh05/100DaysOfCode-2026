@@ -25,3 +25,8 @@ s = input("Enter the string: ")
 # Create object and print the result
 obj = Solution()
 print("Output:", obj.solve(s))
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
