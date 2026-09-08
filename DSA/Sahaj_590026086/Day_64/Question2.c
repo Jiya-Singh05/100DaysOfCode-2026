@@ -1,5 +1,3 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// The Conference Room (Interval Overlap)
-int minMeetingRooms(int** intervals, int intervalsSize, int* intervalsColSize);
+int compareInt(const void* a, const void* b) { return *(int*)a - *(int*)b; }
