@@ -43,3 +43,8 @@ bool isPalindrome(struct ListNode* head) {
     }
     return true;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
