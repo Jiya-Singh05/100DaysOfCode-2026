@@ -23,3 +23,8 @@ struct TreeNode* bstFromPreorder(int* preorder, int n) {
     int idx = 0;
     return build(preorder, &idx, n, INT_MIN, INT_MAX);
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
