@@ -1,5 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Detect Cycle in a Linked List
-int hasCycle(struct Node *head);
+// Structure of a node
+struct Node {
+    int data;
+    struct Node *next;
+};
+
+// Function to check whether the linked list contains a cycle
+int hasCycle(struct Node *head) {
+    struct Node *slow = head;
+    struct Node *fast = head;
+    // Traverse the linked list
+    while (fast != NULL && fast->next != NULL) {
+        // Move slow pointer one step
+        slow = slow->next;
+        // Move fast pointer two steps
+        fast = fast->next->next;
+        // If both pointers meet, a cycle exists
+        if (slow == fast) {
+            return 1;
+        }
+    }
+    // No cycle found
+    return 0;
+}
