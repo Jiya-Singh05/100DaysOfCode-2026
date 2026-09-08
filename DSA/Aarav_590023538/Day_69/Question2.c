@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -51,4 +47,20 @@ void printBranch(Node* root) {
     for (size_t i = 0; i < out.size(); i++) {
         cout << out[i] << (i + 1 < out.size() ? ' ' : '\n');
     }
+}
+
+int main() {
+    int n;
+    long long K;
+    cin >> n;
+    vector<long long> arr(n + 1);
+    for (int i = 1; i <= n; i++) cin >> arr[i];
+    cin >> K;
+
+    Node* root = buildTree(arr, 1, n);
+    auto [branchA, branchB] = split(root, K);
+
+    printBranch(branchA);
+    printBranch(branchB);
+    return 0;
 }
