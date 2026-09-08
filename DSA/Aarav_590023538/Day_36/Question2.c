@@ -51,3 +51,11 @@ int ticketMinute(int n, int k) {
     free(queue);
     return result;
 }
+
+int main() {
+    int n, k;
+    printf("Enter n and k: ");
+    scanf("%d %d", &n, &k);
+    printf("Person %d is served at minute %d\n", k, ticketMinute(n, k));
+    return 0;
+}
