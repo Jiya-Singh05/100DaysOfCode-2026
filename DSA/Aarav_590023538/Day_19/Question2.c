@@ -19,3 +19,21 @@ struct Node* findMiddle(struct Node *head) {
     // Slow will point to the middle node
     return slow;
 }
+
+int main() {
+    struct Node *head = NULL;
+    /*
+        Take input as per your requirement.
+        Example:
+        Input:
+        5
+        1 2 3 4 5
+        or create the linked list manually.
+    */
+    struct Node *middle = findMiddle(head);
+    if (middle != NULL)
+        printf("%d\n", middle->data);
+    else
+        printf("Linked list is empty.\n");
+    return 0;
+}
