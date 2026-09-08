@@ -32,3 +32,19 @@ static void printArray(long long *arr, int n) {
     }
     printf("]\n");
 }
+
+int main(void) {
+    // Sample 1
+    long long b1[] = {5};
+    long long *a1 = reconstructArray(b1, 1, 2);
+    printArray(a1, 2); // [6, 5] — any array with min(a[0],a[1]) == 5 is valid
+
+    // Sample 2
+    long long b2[] = {4, 2, 2};
+    long long *a2 = reconstructArray(b2, 3, 3);
+    printArray(a2, 3); // [5, 4, 2]
+
+    free(a1);
+    free(a2);
+    return 0;
+}
