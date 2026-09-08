@@ -44,3 +44,24 @@ void printList(struct Node *head) {
         head = head->next;
     }
 }
+
+int main() {
+    // Create first node
+    struct Node *head = (struct Node *)malloc(sizeof(struct Node));
+    head->data = 10;
+    // Create second node
+    struct Node *second = (struct Node *)malloc(sizeof(struct Node));
+    second->data = 20;
+    // Connect the two nodes
+    head->prev = NULL;
+    head->next = second;
+    second->prev = head;
+    second->next = NULL;
+    printf("Original List: ");
+    printList(head);
+    // Delete the last node
+    head = deleteLastNode(head);
+    printf("\nUpdated List: ");
+    printList(head);
+    return 0;
+}
