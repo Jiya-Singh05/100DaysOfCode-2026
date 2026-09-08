@@ -1,4 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// The Mountain Expedition
+1
+       / \
+      2   3
+     / \
+    4   5
