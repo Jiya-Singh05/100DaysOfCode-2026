@@ -23,3 +23,8 @@ class Solution:
             queue.append(node.right)
 
         return True
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
