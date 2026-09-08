@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -30,4 +26,30 @@ vector<int> complementBFS(int n, int s, vector<unordered_set<int>>& adj) {
         for (int v : toRemove) unvisited.erase(v);
     }
     return dist;
+}
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+    vector<unordered_set<int>> adj(n + 1);
+    for (int i = 0; i < m; i++) {
+        int u, v;
+        cin >> u >> v;
+        adj[u].insert(v);
+        adj[v].insert(u);
+    }
+    int s;
+    cin >> s;
+
+    vector<int> dist = complementBFS(n, s, adj);
+
+    bool first = true;
+    for (int i = 1; i <= n; i++) {
+        if (i == s) continue;
+        if (!first) cout << " ";
+        cout << dist[i];
+        first = false;
+    }
+    cout << "\n";
+    return 0;
 }
