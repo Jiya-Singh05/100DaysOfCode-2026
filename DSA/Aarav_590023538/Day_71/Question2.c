@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -32,4 +28,11 @@ string encryptGrid(const string& s) {
         }
     }
     return result;
+}
+
+int main() {
+    string line;
+    getline(cin, line);
+    cout << encryptGrid(line) << "\n";
+    return 0;
 }
