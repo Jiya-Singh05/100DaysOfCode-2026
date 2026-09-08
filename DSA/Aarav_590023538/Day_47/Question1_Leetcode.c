@@ -35,3 +35,8 @@ public:
         return answer;
     }
 };
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
