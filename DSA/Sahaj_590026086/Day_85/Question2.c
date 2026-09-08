@@ -1,6 +1,4 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// Maximum Number of Activities
 typedef struct { int start; int end; } Activity;
-int maxActivities(Activity* arr, int n);
+int compareActivity(const void* a, const void* b) { return ((Activity*)a)->end - ((Activity*)b)->end; }
