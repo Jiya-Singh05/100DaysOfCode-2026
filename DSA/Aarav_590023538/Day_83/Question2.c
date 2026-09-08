@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -15,4 +11,12 @@ int countSetBits(int n) {
     }
 
     return count;
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    cout << countSetBits(n) << "\n";
+    return 0;
 }
