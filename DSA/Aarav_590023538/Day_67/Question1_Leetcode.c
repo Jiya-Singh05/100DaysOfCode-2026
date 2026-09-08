@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -39,4 +35,17 @@ TreeNode* deleteNode(TreeNode* root, int key) {
         return succ;
     }
     return root;
+}
+
+int main() {
+    // root = [5,3,6,2,4,null,7], key = 3
+    // deleting 3 (two children: 2 and 4) replaces it with its in-order
+    // successor 4, giving [5,4,6,2,null,null,7]
+
+    // root = [5,3,6,2,4,null,7], key = 0
+    // 0 is not present, tree is returned unchanged
+
+    // root = [], key = 0
+    // empty tree stays empty
+    return 0;
 }
