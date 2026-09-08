@@ -1,9 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-// Card Picking Game
-int main() {
-int n;
+int main()
+{
+    int n;
     // Input number of cards
     scanf("%d", &n);
     int cards[n];
@@ -25,5 +23,26 @@ int n;
         if (cards[left] > cards[right])
         {
             picked = cards[left];
+            left++;
+        }
+        else
+        {
+            picked = cards[right];
+            right--;
+        }
+        // Add picked card to the current player's score
+        if (turn == 0)
+        {
+            player1 += picked;
+            turn = 1;
+        }
+        else
+        {
+            player2 += picked;
+            turn = 0;
+        }
+    }
+    // Print final scores
+    printf("%d %d\n", player1, player2);
     return 0;
 }
