@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-// The Balance Spectrum (Balanced Binary Tree)
 struct TreeNode { int val; struct TreeNode *left; struct TreeNode *right; };
-bool isBalanced(struct TreeNode* root);
+int checkHeight(struct TreeNode* root) {
+    if (!root) return 0;
+    int lh = checkHeight(root->left);
+    if (lh == -1) return -1;
+    int rh = checkHeight(root->right);
+    if (rh == -1) return -1;
+    if (abs(lh - rh) > 1) return -1;
+    return 1 + (lh > rh ? lh : rh);
+}
