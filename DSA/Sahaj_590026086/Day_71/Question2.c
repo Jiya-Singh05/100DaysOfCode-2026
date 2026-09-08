@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// Grid Encryption
-void encryptGrid(int** grid, int r, int c, int key);
+void encryptGrid(int** grid, int r, int c, int key) {
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) grid[i][j] ^= key;
+    }
+}
