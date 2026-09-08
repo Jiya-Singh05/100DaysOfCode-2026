@@ -32,3 +32,8 @@ int* finalPrices(int* prices, int pricesSize, int* returnSize) {
     }
     return answer;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
