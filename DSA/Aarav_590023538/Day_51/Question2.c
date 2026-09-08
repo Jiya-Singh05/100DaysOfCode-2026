@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -25,4 +21,23 @@ int firstInvalidRecord(vector<vector<string>>& deliveries) {
         }
     }
     return -1;
+}
+
+int main() {
+    vector<vector<string>> d1 = {
+        {"V1","L100","A"}, {"V2","L200","B"}, {"V1","L100","A"}, {"V1","L100","C"}
+    };
+    cout << firstInvalidRecord(d1) << endl; // 3
+
+    vector<vector<string>> d2 = {
+        {"V1","L100","A"}, {"V1","L101","A"}, {"V2","L100","A"}
+    };
+    cout << firstInvalidRecord(d2) << endl; // -1
+
+    vector<vector<string>> d3 = {
+        {"V3","L500","X"}, {"V3","L500","Y"}
+    };
+    cout << firstInvalidRecord(d3) << endl; // 1
+
+    return 0;
 }
