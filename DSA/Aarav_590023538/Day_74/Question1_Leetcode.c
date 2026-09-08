@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -39,4 +35,14 @@ long long countPairs(int n, vector<vector<int>>& edges) {
         }
     }
     return ans;
+}
+
+int main() {
+    vector<vector<int>> e1 = {{0,1},{0,2},{1,2}};
+    cout << countPairs(3, e1) << endl; // 0
+
+    vector<vector<int>> e2 = {{0,2},{0,5},{2,4},{1,6},{5,4}};
+    cout << countPairs(7, e2) << endl; // 14
+
+    return 0;
 }
