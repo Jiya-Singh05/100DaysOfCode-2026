@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -40,4 +36,17 @@ int maxRob(vector<int>& tree) {
     TreeNode* root = build(tree, 0);
     auto [withRoot, withoutRoot] = robHelper(root);
     return max(withRoot, withoutRoot);
+}
+
+int main() {
+    vector<int> t1 = {3, 2, 3, -1, 3, -1, 1};
+    cout << maxRob(t1) << endl; // 7
+
+    vector<int> t2 = {3, 4, 5, 1, 3, -1, 1};
+    cout << maxRob(t2) << endl; // 9
+
+    vector<int> t3 = {10};
+    cout << maxRob(t3) << endl; // 10
+
+    return 0;
 }
