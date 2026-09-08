@@ -13,3 +13,8 @@ def max_prefix_diff_score(nums):
         if x > hi: hi = x
 
     return (n - 1) * (hi - lo)
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
