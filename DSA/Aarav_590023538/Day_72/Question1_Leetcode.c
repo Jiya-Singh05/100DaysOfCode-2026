@@ -41,3 +41,14 @@ int closestMeetingNode(int *edges, int n, int node1, int node2) {
     free(dist2);
     return best;
 }
+
+int main(void) {
+    int edges[] = {2, 2, 3, -1};
+    int n = 4;
+    printf("%d\n", closestMeetingNode(edges, n, 0, 1)); // 2
+
+    int edges2[] = {1, 2, -1};
+    printf("%d\n", closestMeetingNode(edges2, 3, 0, 2)); // 2
+
+    return 0;
+}
