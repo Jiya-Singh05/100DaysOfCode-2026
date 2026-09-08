@@ -32,3 +32,8 @@ char* removeOuterParentheses(char* s) {
     ans[j] = '\0';
     return ans;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
