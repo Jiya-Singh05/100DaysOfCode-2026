@@ -27,3 +27,8 @@ bool canJump(int* nums, int numsSize) {
     // Successfully traversed the array
     return true;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
