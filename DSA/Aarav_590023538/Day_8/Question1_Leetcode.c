@@ -33,3 +33,8 @@ bool isPalindrome(char *s) {
     }
     return true;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
