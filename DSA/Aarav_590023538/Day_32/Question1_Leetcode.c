@@ -23,3 +23,8 @@ int minLength(char* s) {
     // represent the minimum possible string length
     return top + 1;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
