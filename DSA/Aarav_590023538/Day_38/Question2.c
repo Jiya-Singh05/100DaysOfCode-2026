@@ -27,3 +27,8 @@ class Solution {
         return result;
     }
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
