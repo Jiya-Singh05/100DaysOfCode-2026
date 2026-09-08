@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -28,4 +24,12 @@ string addBinary(string a, string b) {
 
     reverse(ans.begin(), ans.end());
     return ans;
+}
+
+int main() {
+    string a, b;
+    cin >> a >> b;
+
+    cout << addBinary(a, b) << "\n";
+    return 0;
 }
