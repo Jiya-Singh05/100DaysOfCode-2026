@@ -1,5 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// Detective Aditya's Chase
-int minSteps(int* path, int n);
+int minSteps(int* path, int n) {
+    return n - 1;
+}
