@@ -37,3 +37,28 @@ void printList(struct Node *head) {
 }
 
 // Driver code
+int main() {
+    // Creating the linked list: 1 -> 2 -> 3 -> 4 -> 5
+    struct Node *head = (struct Node*)malloc(sizeof(struct Node));
+    head->data = 1;
+    head->next = (struct Node*)malloc(sizeof(struct Node));
+    head->next->data = 2;
+    head->next->next = (struct Node*)malloc(sizeof(struct Node));
+    head->next->next->data = 3;
+    head->next->next->next = (struct Node*)malloc(sizeof(struct Node));
+    head->next->next->next->data = 4;
+    head->next->next->next->next = (struct Node*)malloc(sizeof(struct Node));
+    head->next->next->next->next->data = 5;
+    head->next->next->next->next->next = NULL;
+
+    printf("Original List: ");
+    printList(head);
+
+    // Reverse the linked list
+    head = reverseList(head);
+
+    printf("\nReversed List: ");
+    printList(head);
+
+    return 0;
+}
