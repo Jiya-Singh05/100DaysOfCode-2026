@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+
 int longestPalindrome(char* s) {
     int freq[128] = {0};
     int len = strlen(s);
@@ -14,4 +15,10 @@ int longestPalindrome(char* s) {
     }
     if (hasOdd) result++;
     return result;
+}
+
+int main() {
+    char s[] = "abccccdd";
+    printf("%d\n", longestPalindrome(s));
+    return 0;
 }
