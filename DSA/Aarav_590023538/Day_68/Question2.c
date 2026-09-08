@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -47,4 +43,18 @@ int largestBSTSubtree(Node* root) {
     int best = 0;
     largestBSTHelper(root, best);
     return best;
+}
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        vector<long long> arr(n + 1);
+        for (int i = 1; i <= n; i++) cin >> arr[i];
+        Node* root = buildTree(arr, 1, n);
+        cout << largestBSTSubtree(root) << endl;
+    }
+    return 0;
 }
