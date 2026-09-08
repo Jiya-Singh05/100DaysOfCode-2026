@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// Minimum Cost to Make a Ring Strongly Connected
-int minCostRing(int n, int* costs);
+int minCostRing(int n, int* costs) {
+    int total = 0;
+    for (int i = 0; i < n; i++) total += costs[i];
+    return total;
+}
