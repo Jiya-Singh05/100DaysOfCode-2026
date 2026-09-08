@@ -23,3 +23,8 @@ int strStr(char* haystack, char* needle) {
     // Substring not found
     return -1;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
