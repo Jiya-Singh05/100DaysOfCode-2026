@@ -27,3 +27,8 @@ def betterString(s1, s2):
         return s1
     else:
         return s2
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
