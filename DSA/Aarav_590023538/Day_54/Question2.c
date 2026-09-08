@@ -22,3 +22,16 @@ const char* footballChampion(char goals[][11], int n) {
 
     return (count1 > count2) ? team1 : team2;
 }
+
+int main(void) {
+    char g1[][11] = {"ABC"};
+    printf("%s\n", footballChampion(g1, 1)); // ABC
+
+    char g2[][11] = {"A", "ABA", "ABA", "A", "A"};
+    printf("%s\n", footballChampion(g2, 5)); // A
+
+    char g3[][11] = {"LIONS", "TIGERS", "LIONS", "LIONS"};
+    printf("%s\n", footballChampion(g3, 4)); // LIONS
+
+    return 0;
+}
