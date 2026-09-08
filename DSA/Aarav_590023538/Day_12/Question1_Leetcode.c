@@ -21,3 +21,8 @@ class Solution:
                 current_width = width
         # Return total lines and width of the last line
         return [lines, current_width]
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
