@@ -71,3 +71,8 @@ int myStackEmpty(MyStack *st) {
  *
  * int param_4 = myStackEmpty(&st);
  */
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
