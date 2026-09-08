@@ -30,3 +30,8 @@ int** transpose(int** matrix, int matrixSize, int* matrixColSize, int* returnSiz
     // Return the transposed matrix
     return result;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
