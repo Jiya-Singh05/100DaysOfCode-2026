@@ -2,5 +2,10 @@
 #include <bits/stdc++.h>
 #include <stdlib.h>
 
-// Power of Two or Zero?
-bool isPowerOfTwoOrZero(int n);
+pp
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPowerOfTwoOrZero(int n) {
+    return n == 0 || (n & (n - 1)) == 0;
+}
