@@ -1,5 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// The Heist (House Robber)
-int rob(int* nums, int numsSize);
+int rob(int* nums, int numsSize) {
+    if (numsSize == 0) return 0;
+    if (numsSize == 1) return nums[0];
+    int prev2 = 0, prev1 = 0;
+    for (int i = 0; i < numsSize; i++) {
+        int curr = (prev2 + nums[i] > prev1) ? prev2 + nums[i] : prev1;
+        prev2 = prev1;
+        prev1 = curr;
+    }
+    return prev1;
+}
