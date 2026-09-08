@@ -63,3 +63,15 @@ int isCompleteTree(TreeNode* root) {
     }
     return 1;
 }
+
+int main(void) {
+    int v1[] = {1, 2, 3, 4, 5, 6};
+    TreeNode* r1 = buildTree(v1, 6);
+    printf("%s\n", isCompleteTree(r1) ? "true" : "false"); // true
+
+    int v2[] = {1, 2, 3, 4, 5, NIL, 7};
+    TreeNode* r2 = buildTree(v2, 7);
+    printf("%s\n", isCompleteTree(r2) ? "true" : "false"); // false
+
+    return 0;
+}
