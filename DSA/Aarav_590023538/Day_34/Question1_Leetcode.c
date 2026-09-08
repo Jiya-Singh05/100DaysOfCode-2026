@@ -70,3 +70,8 @@ void myQueueFree(MyQueue* obj) {
  *
  * myQueueFree(obj);
  */
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
