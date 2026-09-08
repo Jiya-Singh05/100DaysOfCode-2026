@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int numberOfSteps(int num) {
     int steps = 0;
     while (num > 0) {
@@ -8,4 +9,9 @@ int numberOfSteps(int num) {
         steps++;
     }
     return steps;
+}
+
+int main() {
+    printf("%d\n", numberOfSteps(14));
+    return 0;
 }
