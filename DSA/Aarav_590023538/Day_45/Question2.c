@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 java
 class Solution {
     public long countInv(int[] a) {
@@ -43,4 +40,10 @@ class Solution {
         return cnt;
     }
     
-    public static
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.countInv(new int[]{2, 4, 1, 3, 5})); // 3
+        System.out.println(s.countInv(new int[]{5, 4, 3, 2, 1})); // 10
+        System.out.println(s.countInv(new int[]{1, 2, 3, 4, 5})); // 0
+    }
+}
