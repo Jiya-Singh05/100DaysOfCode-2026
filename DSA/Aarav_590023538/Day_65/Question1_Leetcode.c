@@ -85,3 +85,19 @@ void printModes(void) {
     }
     printf("]\n");
 }
+
+int main(void) {
+    int v1[] = {1, NIL, 2, 2};
+    TreeNode* r1 = buildTree(v1, 4);
+    resetState();
+    inorder(r1);
+    printModes(); // [2]
+
+    int v2[] = {0};
+    TreeNode* r2 = buildTree(v2, 1);
+    resetState();
+    inorder(r2);
+    printModes(); // [0]
+
+    return 0;
+}
