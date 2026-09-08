@@ -2,5 +2,10 @@
 #include <bits/stdc++.h>
 #include <stdlib.h>
 
-// Turn Off the Rightmost Set Bit
-int turnOffRightmostSetBit(int n);
+pp
+#include <bits/stdc++.h>
+using namespace std;
+
+int turnOffRightmostSetBit(int n) {
+    return n & (n - 1);
+}
