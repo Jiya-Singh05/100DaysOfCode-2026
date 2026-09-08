@@ -37,3 +37,8 @@ int rob(int* nums, int numsSize) {
     // Return the maximum amount from both cases
     return (case1 > case2) ? case1 : case2;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
