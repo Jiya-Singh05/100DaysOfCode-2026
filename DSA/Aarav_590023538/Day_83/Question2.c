@@ -2,5 +2,17 @@
 #include <bits/stdc++.h>
 #include <stdlib.h>
 
-// Count Set Bits
-int countSetBits(int n);
+pp
+#include <bits/stdc++.h>
+using namespace std;
+
+int countSetBits(int n) {
+    int count = 0;
+
+    while (n != 0) {
+        n &= (n - 1);
+        count++;
+    }
+
+    return count;
+}
