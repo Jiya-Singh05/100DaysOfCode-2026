@@ -23,3 +23,18 @@ void sortedSquares(int nums[], int n, int result[]) {
         index--;
     }
 }
+
+int main() {
+    int nums[] = {-4, -1, 0, 3, 10};
+    int n = sizeof(nums) / sizeof(nums[0]);
+    int result[n];
+
+    sortedSquares(nums, n, result);
+
+    printf("Sorted Squares: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", result[i]);
+    }
+
+    return 0;
+}
