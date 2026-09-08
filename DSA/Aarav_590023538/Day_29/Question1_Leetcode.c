@@ -42,3 +42,8 @@ bool isValid(char* s) {
     free(stack);
     return ans;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
