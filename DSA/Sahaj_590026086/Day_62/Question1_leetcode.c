@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-// LeetCode 2331: Evaluate Boolean Binary Tree
 struct TreeNode { int val; struct TreeNode *left; struct TreeNode *right; };
-bool evaluateTree(struct TreeNode* root);
+bool evaluateTree(struct TreeNode* root) {
+    if (!root->left && !root->right) return root->val == 1;
+    bool l = evaluateTree(root->left);
+    bool r = evaluateTree(root->right);
+    if (root->val == 2) return l || r;
+    return l && r;
+}
