@@ -19,3 +19,13 @@ int maxFrequencyElements(int *nums, int n) {
 
     return total;
 }
+
+int main(void) {
+    int n1[] = {1, 2, 2, 3, 1, 4};
+    printf("%d\n", maxFrequencyElements(n1, 6)); // 4
+
+    int n2[] = {1, 2, 3, 4, 5};
+    printf("%d\n", maxFrequencyElements(n2, 5)); // 5
+
+    return 0;
+}
