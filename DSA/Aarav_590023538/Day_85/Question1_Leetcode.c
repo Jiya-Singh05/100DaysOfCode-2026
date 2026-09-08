@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -21,4 +17,21 @@ int findContentChildren(vector<int>& g, vector<int>& s) {
     }
 
     return child;
+}
+
+int main() {
+    int n, m;
+    cin >> n;
+
+    vector<int> g(n);
+    for (int i = 0; i < n; i++)
+        cin >> g[i];
+
+    cin >> m;
+    vector<int> s(m);
+    for (int i = 0; i < m; i++)
+        cin >> s[i];
+
+    cout << findContentChildren(g, s) << "\n";
+    return 0;
 }
