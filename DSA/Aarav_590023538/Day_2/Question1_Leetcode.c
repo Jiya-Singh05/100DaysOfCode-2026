@@ -18,3 +18,8 @@ int removeElement(int* nums, int numsSize, int val) {
     // Return count of remaining elements
     return k;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
