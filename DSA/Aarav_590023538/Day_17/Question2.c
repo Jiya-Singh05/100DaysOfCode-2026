@@ -25,3 +25,14 @@ int hasCycle(struct Node *head) {
     // No cycle found
     return 0;
 }
+
+int main() {
+    struct Node *head = NULL;
+    // Create linked list here
+    // (Input code can be added as per requirement)
+    if (hasCycle(head))
+        printf("Cycle exists\n");
+    else
+        printf("No cycle exists\n");
+    return 0;
+}
