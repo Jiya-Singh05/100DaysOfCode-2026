@@ -18,3 +18,16 @@ int findJudge(int n, int trust[][2], int trustSize) {
     free(score);
     return judge;
 }
+
+int main(void) {
+    int t1[][2] = {{1,2}};
+    printf("%d\n", findJudge(2, t1, 1)); // 2
+
+    int t2[][2] = {{1,3},{2,3}};
+    printf("%d\n", findJudge(3, t2, 2)); // 3
+
+    int t3[][2] = {{1,3},{2,3},{3,1}};
+    printf("%d\n", findJudge(3, t3, 3)); // -1
+
+    return 0;
+}
