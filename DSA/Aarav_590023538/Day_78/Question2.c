@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -56,3 +52,25 @@ public:
         return ans;
     }
 };
+
+int main() {
+    int n;
+    cin >> n;
+
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+
+    Trie trie;
+
+    for (int x : arr)
+        trie.insert(x);
+
+    int maximumXOR = 0;
+
+    for (int x : arr)
+        maximumXOR = max(maximumXOR, trie.getMaximumXOR(x));
+
+    cout << maximumXOR << "\n";
+    return 0;
+}
