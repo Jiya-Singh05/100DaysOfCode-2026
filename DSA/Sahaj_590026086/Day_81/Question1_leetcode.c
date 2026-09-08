@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// LeetCode 461: Hamming Distance
-int hammingDistance(int x, int y);
+int hammingDistance(int x, int y) {
+    int xorVal = x ^ y, dist = 0;
+    while (xorVal) {
+        dist += xorVal & 1;
+        xorVal >>= 1;
+    }
+    return dist;
+}
