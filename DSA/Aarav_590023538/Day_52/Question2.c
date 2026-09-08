@@ -84,3 +84,21 @@ void freeTable(void) {
         }
     }
 }
+
+int main() {
+    int n;
+    printf("Enter number of requests: ");
+    scanf("%d", &n);
+
+    char request[MAX_LEN];
+    char result[MAX_LEN];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%s", request);
+        registerUsername(request, result);
+        printf("%s\n", result);
+    }
+
+    freeTable();
+    return 0;
+}
