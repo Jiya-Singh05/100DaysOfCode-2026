@@ -45,3 +45,8 @@ def solve():
 
 if __name__ == "__main__":
     solve()
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
