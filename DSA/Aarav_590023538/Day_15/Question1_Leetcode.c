@@ -74,3 +74,8 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
             return NULL;   // Both lists are empty
     }
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
