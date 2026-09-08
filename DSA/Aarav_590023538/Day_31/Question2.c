@@ -31,3 +31,10 @@ void nextGreaterElement(int arr[], int n) {
     }
     printf("\n");
 }
+
+int main() {
+    int arr[] = {1, 3, 2, 4};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    nextGreaterElement(arr, n);
+    return 0;
+}
