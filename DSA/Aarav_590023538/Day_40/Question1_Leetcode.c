@@ -117,3 +117,21 @@ void fmbqFree(FrontMiddleBackQueue* q) {
     while (cur) { Node* nx = cur->next; free(cur); cur = nx; }
     free(q);
 }
+
+int main(void) {
+    FrontMiddleBackQueue* q = fmbqCreate();
+
+    fmbqPushFront(q, 1);
+    fmbqPushBack(q, 2);
+    fmbqPushMiddle(q, 3);
+    fmbqPushMiddle(q, 4);
+
+    printf("%d\n", fmbqPopFront(q));   /* 1  */
+    printf("%d\n", fmbqPopMiddle(q));  /* 3  */
+    printf("%d\n", fmbqPopMiddle(q));  /* 4  */
+    printf("%d\n", fmbqPopBack(q));    /* 2  */
+    printf("%d\n", fmbqPopFront(q));   /* -1 */
+
+    fmbqFree(q);
+    return 0;
+}
