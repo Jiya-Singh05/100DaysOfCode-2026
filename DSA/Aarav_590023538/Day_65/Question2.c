@@ -44,3 +44,19 @@ int closestValue(TreeNode* root, double target) {
     }
     return best;
 }
+
+int main(void) {
+    int t1[] = {4, 2, 5, 1, 3, -1, -1};
+    TreeNode* r1 = build(t1, 7, 1);
+    printf("%d\n", closestValue(r1, 3.0)); // 3
+
+    int t2[] = {4, 2, 5, 1, 3, -1, -1};
+    TreeNode* r2 = build(t2, 7, 1);
+    printf("%d\n", closestValue(r2, 3.7)); // 4
+
+    int t3[] = {1, -1, 3};
+    TreeNode* r3 = build(t3, 3, 1);
+    printf("%d\n", closestValue(r3, 2.0)); // 1
+
+    return 0;
+}
