@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -26,4 +22,20 @@ int maxActivities(vector<int>& start, vector<int>& end) {
     }
 
     return count;
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    vector<int> start(n), end(n);
+
+    for (int i = 0; i < n; i++)
+        cin >> start[i];
+
+    for (int i = 0; i < n; i++)
+        cin >> end[i];
+
+    cout << maxActivities(start, end) << "\n";
+    return 0;
 }
