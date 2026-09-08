@@ -38,3 +38,8 @@ public:
         return -1; // shouldn't reach here given valid constraints
     }
 };
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
