@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int findJudge(int n, int** trust, int trustSize, int* trustColSize) {
     int* score = (int*)calloc(n + 1, sizeof(int));
     for (int i = 0; i < trustSize; i++) {
@@ -11,4 +12,12 @@ int findJudge(int n, int** trust, int trustSize, int* trustColSize) {
     }
     free(score);
     return -1;
+}
+
+int main() {
+    int t1[] = {1, 3}, t2[] = {2, 3};
+    int* trust[] = {t1, t2};
+    int col = 2;
+    printf("%d\n", findJudge(3, trust, 2, &col));
+    return 0;
 }
