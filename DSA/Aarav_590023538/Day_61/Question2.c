@@ -25,3 +25,19 @@ int minGroups(int n) {
     }
     return best;
 }
+
+int main(void) {
+    int m1[] = {-1, 1, 2, 1, -1};
+    memcpy(mentorArr, m1, sizeof(m1));
+    printf("%d\n", minGroups(5)); // 3
+
+    int m2[] = {-1, 1, 2};
+    memcpy(mentorArr, m2, sizeof(m2));
+    printf("%d\n", minGroups(3)); // 3
+
+    int m3[] = {-1, -1, -1, -1};
+    memcpy(mentorArr, m3, sizeof(m3));
+    printf("%d\n", minGroups(4)); // 1
+
+    return 0;
+}
