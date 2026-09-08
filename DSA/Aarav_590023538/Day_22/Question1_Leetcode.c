@@ -19,3 +19,8 @@ void moveZeroes(int* nums, int numsSize)
         }
     }
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
