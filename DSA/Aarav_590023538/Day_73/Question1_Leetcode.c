@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -33,4 +29,15 @@ int closestMeetingNode(vector<int>& edges, int node1, int node2) {
         }
     }
     return best;
+}
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> edges(n);
+    for (int i = 0; i < n; i++) cin >> edges[i];
+    int node1, node2;
+    cin >> node1 >> node2;
+    cout << closestMeetingNode(edges, node1, node2) << "\n";
+    return 0;
 }
