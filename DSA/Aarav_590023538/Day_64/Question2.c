@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -31,4 +27,17 @@ int lowestCommonAncestor(TreeNode* root, int a, int b) {
         else return cur->val; // split point, or one of a/b equals cur->val
     }
     return -1; // unreachable given the problem's guarantee
+}
+
+int main() {
+    vector<int> t1 = {6, 2, 8, 0, 4, 7, 9};
+    cout << lowestCommonAncestor(build(t1, 0), 2, 8) << endl; // 6
+
+    vector<int> t2 = {6, 2, 8, 0, 4, 7, 9};
+    cout << lowestCommonAncestor(build(t2, 0), 2, 4) << endl; // 2
+
+    vector<int> t3 = {2, 1, 3};
+    cout << lowestCommonAncestor(build(t3, 0), 1, 3) << endl; // 2
+
+    return 0;
 }
