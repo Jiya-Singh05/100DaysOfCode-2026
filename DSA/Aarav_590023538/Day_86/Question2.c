@@ -34,3 +34,10 @@ double fractionalKnapsack(long long* value, long long* weight, int n, long long 
     free(items);
     return totalValue;
 }
+
+int main() {
+    long long val[] = {60, 100, 120};
+    long long wt[] = {10, 20, 30};
+    printf("%.2f\n", fractionalKnapsack(val, wt, 3, 50));
+    return 0;
+}
