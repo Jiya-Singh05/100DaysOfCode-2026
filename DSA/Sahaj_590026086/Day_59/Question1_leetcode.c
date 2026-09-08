@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-struct TreeNode { int val; struct TreeNode *left; struct TreeNode *right; };
+
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+
 bool isCompleteTree(struct TreeNode* root) {
     if (!root) return true;
     struct TreeNode* queue[1000];
@@ -18,4 +24,10 @@ bool isCompleteTree(struct TreeNode* root) {
         }
     }
     return true;
+}
+
+int main() {
+    struct TreeNode r = {1, NULL, NULL};
+    printf("%s\n", isCompleteTree(&r) ? "true" : "false");
+    return 0;
 }
