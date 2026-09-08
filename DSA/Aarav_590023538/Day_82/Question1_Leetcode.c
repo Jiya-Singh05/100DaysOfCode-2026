@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -19,4 +15,12 @@ int numberOfSteps(int num) {
     }
 
     return steps;
+}
+
+int main() {
+    int num;
+    cin >> num;
+
+    cout << numberOfSteps(num) << "\n";
+    return 0;
 }
