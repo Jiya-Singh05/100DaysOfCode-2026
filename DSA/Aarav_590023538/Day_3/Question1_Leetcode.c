@@ -25,3 +25,8 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     *returnSize = digitsSize + 1;
     return result;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
