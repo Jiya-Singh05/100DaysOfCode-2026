@@ -40,3 +40,13 @@ void printList(struct Node *head) {
     }
     printf("\n");
 }
+
+int main() {
+    struct Node *head = NULL;
+    int n;
+    // Input and linked list creation can be coded here as per the required input format.
+    scanf("%d", &n);
+    head = removeNthFromEnd(head, n);
+    printList(head);
+    return 0;
+}
