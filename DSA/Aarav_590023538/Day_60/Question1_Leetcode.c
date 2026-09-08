@@ -25,3 +25,8 @@ class Solution:
 
         height(root)
         return self.diameter
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
