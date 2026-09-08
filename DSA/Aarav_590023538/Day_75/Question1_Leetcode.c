@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -38,4 +34,15 @@ int largestPathValue(string colors, vector<vector<int>>& edges) {
     }
 
     return visited == n ? ans : -1;
+}
+
+int main() {
+    string colors;
+    cin >> colors;
+    int m;
+    cin >> m;
+    vector<vector<int>> edges(m, vector<int>(2));
+    for (int i = 0; i < m; i++) cin >> edges[i][0] >> edges[i][1];
+    cout << largestPathValue(colors, edges) << "\n";
+    return 0;
 }
