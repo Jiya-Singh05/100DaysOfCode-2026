@@ -26,3 +26,8 @@ struct ListNode* deleteDuplicates(struct ListNode* head) {
     // Return the head of the updated linked list
     return head;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
