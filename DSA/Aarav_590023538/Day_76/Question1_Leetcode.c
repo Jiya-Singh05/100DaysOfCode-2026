@@ -66,3 +66,8 @@ public:
         return (int)dfs(0).second;
     }
 };
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
