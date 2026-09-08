@@ -1,5 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Middle of the Linked List
-struct Node* findMiddle(struct Node *head);
+// Structure for a singly linked list node
+struct Node {
+    int data;
+    struct Node *next;
+};
+
+// Function to find the middle node
+struct Node* findMiddle(struct Node *head) {
+    struct Node *slow = head;
+    struct Node *fast = head;
+    // Move slow by one step and fast by two steps
+    while (fast != NULL && fast->next != NULL) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    // Slow will point to the middle node
+    return slow;
+}
