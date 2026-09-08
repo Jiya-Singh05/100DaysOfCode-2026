@@ -45,3 +45,29 @@ void display() {
     }
     printf("\n");
 }
+
+int main() {
+    int n, x;
+
+    // Take number of elements
+    printf("Enter number of elements in stack: ");
+    scanf("%d", &n);
+
+    printf("Enter stack elements (bottom to top): ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &stack[i]);
+    }
+    top = n - 1;
+
+    // Take the element to insert
+    printf("Enter element to insert at bottom: ");
+    scanf("%d", &x);
+
+    // Insert the element at the bottom
+    insertAtBottom(x);
+
+    // Print the updated stack
+    display();
+
+    return 0;
+}
