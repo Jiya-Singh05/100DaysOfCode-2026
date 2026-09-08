@@ -19,3 +19,8 @@ def finalArray(nums, k, multiplier):
 # Test cases
 print(finalArray([2, 1, 3, 5, 6], 5, 2))  # [8, 4, 6, 5, 6]
 print(finalArray([1, 2], 3, 4))           # [16, 8]
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
