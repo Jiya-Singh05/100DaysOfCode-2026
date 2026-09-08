@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 java
 class Solution {
     public int searchInsert(int[] nums, int t) {
@@ -21,4 +18,10 @@ class Solution {
         return l;
     }
     
-    public static
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.searchInsert(new int[]{1,3,5,6}, 5)); // 2
+        System.out.println(s.searchInsert(new int[]{1,3,5,6}, 2)); // 1
+        System.out.println(s.searchInsert(new int[]{1,3,5,6}, 7)); // 4
+    }
+}
