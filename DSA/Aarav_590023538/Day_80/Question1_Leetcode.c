@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -15,4 +11,12 @@ int hammingWeight(unsigned int n) {
     }
 
     return count;
+}
+
+int main() {
+    unsigned int n;
+    cin >> n;
+
+    cout << hammingWeight(n) << "\n";
+    return 0;
 }
