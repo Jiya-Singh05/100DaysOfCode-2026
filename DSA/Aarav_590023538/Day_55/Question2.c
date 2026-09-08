@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -36,4 +32,16 @@ long long maxPleasure(vector<int>& length, vector<int>& beauty, int k) {
     }
 
     return best;
+}
+
+int main() {
+    vector<int> len1 = {4, 15, 3, 6};
+    vector<int> b1   = {7, 1, 6, 8};
+    cout << maxPleasure(len1, b1, 3) << endl; // 78
+
+    vector<int> len2 = {12, 112, 100, 13, 55};
+    vector<int> b2   = {31, 4, 100, 55, 50};
+    cout << maxPleasure(len2, b2, 3) << endl; // 10000
+
+    return 0;
 }
