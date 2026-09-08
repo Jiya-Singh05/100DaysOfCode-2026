@@ -36,3 +36,8 @@ struct ListNode* rotateRight(struct ListNode* head, int k) {
     newTail->next = NULL;
     return newHead;
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
