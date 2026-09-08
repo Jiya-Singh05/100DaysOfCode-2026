@@ -30,3 +30,8 @@ struct TreeNode* balanceBST(struct TreeNode* root) {
     inorder(root, arr, &idx);
     return buildBalanced(arr, 0, idx - 1);
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
