@@ -35,3 +35,21 @@ static void printArray(int* arr, int n) {
     }
     printf("]\n");
 }
+
+int main(void) {
+    int t1[] = {1, 3, -1, -3, 5, 3, 6, 7};
+    int t2[] = {9, 11, 8, 5, 7, 10};
+    int t3[] = {4, 4, 4, 4};
+
+    int size;
+    int* r1 = slidingWindowMax(t1, 8, 3, &size);
+    printArray(r1, size); free(r1);   /* [3, 3, 5, 5, 6, 7] */
+
+    int* r2 = slidingWindowMax(t2, 6, 2, &size);
+    printArray(r2, size); free(r2);   /* [11, 11, 8, 7, 10] */
+
+    int* r3 = slidingWindowMax(t3, 4, 2, &size);
+    printArray(r3, size); free(r3);   /* [4, 4, 4] */
+
+    return 0;
+}
