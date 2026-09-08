@@ -105,3 +105,12 @@ void solve(void) {
 
     for (int i = 1; i <= N; i++) free(adj[i]);
 }
+
+int main(void) {
+    int T;
+    scanf("%d", &T);
+    while (T--) {
+        solve();
+    }
+    return 0;
+}
