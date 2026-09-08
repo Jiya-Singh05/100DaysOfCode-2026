@@ -14,3 +14,8 @@ class Solution {
         return count;
     }
 }
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
