@@ -22,3 +22,36 @@ int countSubarrays(int arr[], int n, int limit) {
 
     return count;
 }
+
+int main() {
+    int n;
+
+    // Input the size of the array
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    // Input array elements
+    printf("Enter the array elements: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int left, right;
+
+    // Input the range
+    printf("Enter left and right: ");
+    scanf("%d %d", &left, &right);
+
+    // Count subarrays with maximum <= right
+    int rightCount = countSubarrays(arr, n, right);
+    // Count subarrays with maximum < left
+    int leftCount = countSubarrays(arr, n, left - 1);
+
+    // Required answer
+    int result = rightCount - leftCount;
+    printf("Number of valid subarrays = %d\n", result);
+
+    return 0;
+}
