@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <bits/stdc++.h>
-#include <stdlib.h>
-
 pp
 #include <bits/stdc++.h>
 using namespace std;
@@ -49,4 +45,20 @@ vector<int> mergeEmployeeIds(vector<int>& tree1, vector<int>& tree2) {
     collect(r2, ids);
 
     return vector<int>(ids.begin(), ids.end());
+}
+
+int main() {
+    vector<int> t1a = {2, 1, 3};
+    vector<int> t1b = {4, -1, 5};
+    auto r1 = mergeEmployeeIds(t1a, t1b); // [1, 2, 3, 4, 5]
+
+    vector<int> t2a = {10, 5, 15, -1, 7};
+    vector<int> t2b = {10, 8, 12};
+    auto r2 = mergeEmployeeIds(t2a, t2b); // [5, 7, 8, 10, 12, 15]
+
+    vector<int> t3a = {1};
+    vector<int> t3b = {1};
+    auto r3 = mergeEmployeeIds(t3a, t3b); // [1]
+
+    return 0;
 }
