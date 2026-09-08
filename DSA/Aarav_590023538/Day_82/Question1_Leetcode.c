@@ -2,5 +2,21 @@
 #include <bits/stdc++.h>
 #include <stdlib.h>
 
-// Number of Steps to Reduce a Number to Zero (LeetCode #1342)
-int numberOfSteps(int num);
+pp
+#include <bits/stdc++.h>
+using namespace std;
+
+int numberOfSteps(int num) {
+    int steps = 0;
+
+    while (num != 0) {
+        if (num & 1)
+            num--;
+        else
+            num >>= 1;
+
+        steps++;
+    }
+
+    return steps;
+}
