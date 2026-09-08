@@ -54,3 +54,8 @@ int recentCounterPing(RecentCounter *rc, int t) {
  * recentCounterInit(&rc);
  * int result = recentCounterPing(&rc, t);
  */
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
