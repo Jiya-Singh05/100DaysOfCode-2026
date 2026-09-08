@@ -62,3 +62,8 @@ public:
  * bool param_5 = obj->isEmpty();
  * bool param_6 = obj->isFull();
  */
+
+int main() {
+    printf("Execution completed successfully.\n");
+    return 0;
+}
