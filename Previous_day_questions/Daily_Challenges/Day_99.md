@@ -1,4 +1,4 @@
-<h2 align="center">Week 15 Day 99 (21/09/2026)</h2>
+<h2 align="center">Day 99 (21/09/2026)</h2>
 
 ## 1. First Missing Positive
 
